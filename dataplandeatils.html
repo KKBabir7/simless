@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simeless | DataPlan</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="css/root.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="img/logo/logo.PNG" /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 gap-2 mb-lg-0" style="flex: none">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="index.html"
+                >Dashboard</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="inventory.html">Inventory</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="productcatalog.html">Product Catalog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="productList.html">Product tList</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Balance $3121</a>
+            </li>
+          </ul>
+        </div>
+        <ul
+          class="navbar-nav ml-auto justify-content-end align-items-center mainbalanceDropdown"
+        >
+          <li class="nav-item dropdown balanceDropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img class="avator" src="img/logo/avator.jpg" />
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <div class="media d-flex gap-2">
+                  <img
+                    class="mr-3"
+                    src="img/logo/avator.jpg"
+                    alt="Generic placeholder image"
+                  />
+                  <div class="media-body d-flex flex-column">
+                    <h5 class="mt-0 mb-0">Jhon Doe</h5>
+                    <p><a href="">abc@gmail.com</a></p>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item-dropdown">
+                <a class="dropdown-item" href="account.html"
+                  ><i class="bi bi-person"></i>Account</a
+                >
+              </li>
+              <li class="nav-item-dropdown">
+                <a class="dropdown-item" href="plan.html"
+                  ><i class="bi bi-wallet"></i>Plan</a
+                >
+              </li>
+              <li class="nav-item-dropdown">
+                <a class="dropdown-item active" href="dataplandeatils.html"
+                  ><i class="bi bi-database"></i>Data Plan Deatils</a
+                >
+              </li>
+              <li class="nav-item-dropdown">
+                <a class="dropdown-item" href="dataplansim.html"
+                  ><i class="bi bi-wallet"></i>Data Plan Sim</a
+                >
+              </li>
+              <li style="opacity: 0.5"><hr class="dropdown-divider" /></li>
+              <li class="nav-item-dropdown signOut">
+                <a class="dropdown-item" href="login.html"
+                  ><i class="bi bi-box-arrow-right"></i>Log In</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container mainConainer">
+      <h6 class="text-center ps-2 pe-2 mb-6 d-block opacity-0.7">
+        SMC-2324234
+      </h6>
+      <br>
+      <div class="atnsDetailsCard" style="box-shadow: var(--commonBoxShadow);">
+        <div class="row atnsDetails">
+          <div class="col-md-6 leftCard">
+            <div class="card  p-4 text-center ">
+              <h2 class="mt-5">Pay - As - You - Go</h2>
+              <h3>Global 139</h3>
+              <div class="countryTmobile mt-5">
+                <p>UNITED STATES | CANADA</p>
+                <p>T-MOBILE | AT & T | VERIZON</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 rightCard">
+            <div class="card p-4">
+              <p
+                class="position-absolute end-0 p-3 top-0 modalUpload"
+                onclick="openNavproductDetails()"
+              >
+                <i class="bi bi-pencil-square"></i>
+              </p>
+              <p class="text-center">
+                <i
+                  style="color: var(--commonColor)"
+                  class="bi bi-reception-4"
+                ></i>
+                T-Mobile <i class="bi bi-arrow-clockwise"></i>
+              </p>
+              <div class="multigraph">
+                <div class="multigrapgText">
+                  <p class="tooltipText0">0GB</p>
+                  <p class="tooltipText1">55GB</p>
+                </div>
+                <p class="position-absolute bottom-0 dataAllowText">
+                  <span>have 2.84 GB of 5 GB 'expires' in 3 days</span>
+                  <br />
+                  <span style="color: var(--opacityColor)">6 Minutes ago</span>
+                </p>
+                <span class="graph"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row dataPLanCenterBtn">
+         <div class="col-12 text-center ">
+            <button class="btn btn-primary "><i class="bi bi-plus-lg"></i> Add Data Plan</button>
+         </div>
+      </div> 
+      <div class="row lackWidows mt-1">
+        <div class="col-md-6">
+          <div class="card p-4">
+            <h4>Black Widow</h4>
+            <h4>XF-46544</h4>
+            <div
+              class="d-flex justify-content-between align-items-center mt-3 flex-wrap"
+            >
+              <div class="threeTraingel">
+                <p></p>
+                <p></p>
+                <p></p>
+              </div>
+              <div class="imgLogo">
+                <img class="w-100" src="img/traingl.PNG" />
+              </div>
+              <div class="allPdf d-flex flex-column gap-0">
+                <p class="m-0">spechseet.pdf</p>
+                <p class="m-0">exmple.pdf</p>
+                <p class="m-0">xyz.pdf</p>
+              </div>
+            </div>
+            <button
+              class="btn btn-primary w-75 align-items-center d-block m-auto"
+            >
+              Reboot
+            </button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div
+            class="card p-4 d-flex align-items-center flex-column justify-content-center"
+          >
+            <div class="paymentHistory w-75">
+              <h4>Payment History</h4>
+              <p>Next Payment $114.00 due Jan 17,2024</p>
+              <button class="btn btn-primary">View History</button>
+            </div>
+            <br />
+            <br />
+            <div class="paymentMethod w-75">
+              <h4>Payment Method</h4>
+              <p>Mastercard - 42424</p>
+              <button class="btn btn-primary">Change Method</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="productDetails" class="sidenav">
+      <a
+        href="javascript:void(0)"
+        class="closebtn"
+        onclick="closeNavproductDetails()"
+        >&times;</a
+      >
+      <div class="row ps-2 pe-2 mt-3">
+        <div class="col-12">
+          <h5><i class="bi bi-clipboard-pulse"></i> Updates</h5>
+          <div class="profileUpdates d-flex mt-3">
+            <img
+              style="width: 40px; height: 40px; border-radius: 5px"
+              src="img/logo/avator.jpg"
+            />
+            <div class="pinformation ms-1">
+              <p class="m-0 p-0">Jhon Doe</p>
+              <p
+                class="m-0 p-0"
+                style="
+                  color: var(--subOpacityColor);
+                  font-size: var(--subCommonFontSize);
+                "
+              >
+                22-4-2023
+              </p>
+            </div>
+          </div>
+          <div class="profileHints mt-2">
+            <p class="m-0 p-0">REF-Zew Black Widow</p>
+            <p class="m-0 p-0">New Upload</p>
+          </div>
+          <hr />
+          <div class="profileUpdates d-flex mt-3">
+            <img
+              style="width: 40px; height: 40px; border-radius: 5px"
+              src="img/logo/avator.jpg"
+            />
+            <div class="pinformation ms-1">
+              <p class="m-0 p-0">Jhon Doe</p>
+              <p
+                class="m-0 p-0"
+                style="
+                  color: var(--subOpacityColor);
+                  font-size: var(--subCommonFontSize);
+                "
+              >
+                22-4-2023
+              </p>
+            </div>
+          </div>
+          <div class="profileHints mt-2">
+            <p class="m-0 p-0">REF-Zew Black Widow</p>
+            <p class="m-0 p-0">New Upload</p>
+          </div>
+          <hr />
+          <p class="text-center m-0 p-0 mb-2"><i class="bi bi-upload"></i></p>
+          <label class="btn-up">
+            <input type="file" hidden />
+            Upload
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <!-- <script
+    src="https://cdn.jsdelivr.net/npm/chart.js@4.0.1/dist/chart.umd.min.js"></script> -->
+    <script src="js/index.js"></script>
+  </body>
+</html>
